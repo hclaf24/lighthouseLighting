@@ -153,12 +153,11 @@ h3 {
 .navHamburger {
   display: none;
   width: 1.875rem;
-  height: 1.313rem;
+  height: 1.25rem;
   flex-direction: column;
   justify-content: space-around;
   position: absolute;
-  top: 25px;
-  right: 25px;
+  right: 1.5em;
 }
 
 .navHamburgerLine {
@@ -181,6 +180,9 @@ h3 {
     flex-wrap: wrap;
   }
 
+  .navbar {
+    padding: 0 1.25em;
+  }
   .navHamburger {
     display: flex;
   }
