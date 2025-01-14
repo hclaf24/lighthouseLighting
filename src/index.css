@@ -1,0 +1,241 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  --header-height: 4em;
+  --charcoal: #383f51ff;
+  --lavender-web: #dddbf1ff;
+  --yinmn-blue: #3c4f76ff;
+  --dun: #d1beb0ff;
+  --rose-quartz: #ab9f9dff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: var(--dun);
+}
+
+body {
+  padding-top: var(--header-height);
+  margin: 0;
+  background-color: var(--lavender-web);
+  width: 100%;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  font-weight: 600;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 1.6em;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+.cardBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2em;
+}
+
+.card {
+  background-color: var(--charcoal);
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  border-radius: 1em;
+}
+
+.card > img {
+  border-radius: 1em 1em 0 0;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  border-bottom: 1px solid #001252;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: fit-content;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: .5em;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 14px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  z-index: 2;
+}
+
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+}
+
+.imageDiv {
+  width: 50%;
+}
+
+.aboutContainer {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Navbar Style */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4em;
+  height: var(--header-height);
+  background: var(--yinmn-blue);
+  box-shadow: 0px 5.333px 80px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.navbarItems {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  text-decoration: none;
+}
+
+.navbarItems > a {
+  text-decoration: none;
+}
+
+.navbarItems > a.active {
+  color: var(--dun);
+}
+
+/* END of Navbar Style */
+
+/* Hamburger menu  */
+
+.navHamburger {
+  display: none;
+  width: 1.875rem;
+  height: 1.313rem;
+  flex-direction: column;
+  justify-content: space-around;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+
+.navHamburgerLine {
+  display: block;
+  height: 0.188rem;
+  width: 100%;
+  background-color: white;
+  border-radius: 0.625rem;
+  transition: all ease-in-out 0.2s;
+}
+
+/* END of Hamburger Menu */
+
+@media screen and (max-width: 1200px) {
+  .imageDiv {
+    width: 75%;
+  }
+
+  .aboutContainer {
+    flex-wrap: wrap;
+  }
+
+  .navHamburger {
+    display: flex;
+  }
+  .navbarItems {
+    display: flex;
+  }
+  .navbarItems {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255);
+    top: -22rem;
+    left: 0;
+    width: 100%;
+    transition: all ease-in-out 0.4s;
+  }
+
+  .navbarItems.active {
+    z-index: 2;
+    top: var(--header-height);
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+  }
+
+  .navbarItems > a {
+    color: var(--yinmn-blue);
+    padding: .5em;
+  }
+
+  .navHamburger.active :nth-child(1) {
+    transform: rotate(45deg) translate(0.45rem, 0.1875rem);
+  }
+
+  .navHamburger.active :nth-child(2) {
+    opacity: 0;
+  }
+
+  .navHamburger.active :nth-child(3) {
+    transform: rotate(-45deg) translate(0.45rem, -0.1875rem);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .imageDiv {
+    width: 100%;
+  }
+
+  .cardBox {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+  }
+}

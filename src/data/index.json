@@ -1,0 +1,126 @@
+{
+  "home": [
+    {
+      "id": "1",
+      "src": "./img/customLight2.png",
+      "description": "Your vision, brought to light. Our expert designers work closely with you to craft bespoke lighting solutions that perfectly complement your home and lifestyle. From concept to creation, every detail is tailored to make your space truly one of a kind.",
+      "title": "Custom Designs",
+      "redirect": "/custom"
+    },
+    {
+      "id": "2",
+      "src": "./img/indoorLightWirePendant.png",
+      "description": "Transform your interiors with lighting that blends beauty and functionality. From ambient to accent lighting, our thoughtfully designed indoor solutions elevate the atmosphere of every room, creating spaces that feel warm, inviting, and uniquely yours.",
+      "title": "Indoor Lights",
+      "redirect": "/lights"
+    },
+    {
+      "id": "3",
+      "src": "./img/solarLEDPathLights.jpg",
+      "description": "Illuminate the beauty of your outdoors with lighting that enhances your home’s architecture and landscape. Whether it’s a welcoming glow for pathways or dramatic highlights for garden features, our outdoor lighting solutions bring elegance and safety to your property.",
+      "title": "Outdoor Lights",
+      "redirect": "/lights"
+    }
+  ],
+  "customLights": [
+    {
+      "id": "1",
+      "src": "./img/customLight1.png",
+      "description": "Custom Wood Light Pendants"
+    },
+    {
+      "id": "2",
+      "src": "./img/customLight2.png",
+      "description": "Custom Wood Light Display"
+    },
+    {
+      "id": "3",
+      "src": "./img/customLight3.png",
+      "description": "Custom Sputnik Light"
+    }
+  ],
+  "indoorLights": [
+    {
+      "id": "1",
+      "src": "./img/indoorLightAntique.png",
+      "description": "Antique Wood Wall Light Fixture"
+    },
+    {
+      "id": "2",
+      "src": "./img/indoorLightFixture.png",
+      "description": "Matte Black Light with Gold"
+    },
+    {
+      "id": "3",
+      "src": "./img/indoorLightFixtureWhite.png",
+      "description": "White Pendant Bowl Lights"
+    },
+    {
+      "id": "4",
+      "src": "./img/indoorLightFixtureYellow.png",
+      "description": "Yellow Metal Pendants"
+    },
+    {
+      "id": "5",
+      "src": "./img/indoorLightUnique.png",
+      "description": "Black and White 3D Printed Lights"
+    },
+    {
+      "id": "6",
+      "src": "./img/indoorLightWirePendant.png",
+      "description": "Wire Pendant Lights"
+    },
+    {
+      "id": "7",
+      "src": "./img/indoorSpotLights.png",
+      "description": "Black and Gold Track Lights"
+    },
+    {
+      "id": "8",
+      "src": "./img/indoorStringLights.png",
+      "description": "Antique String Lights"
+    }
+  ],
+  "outdoorLights": [
+    {
+      "id": "1",
+      "src": "./img/ledPathLights.jpg",
+      "description": "LED Path Lights"
+    },
+    {
+      "id": "2",
+      "src": "./img/outdoorCeilingfan.jpg",
+      "description": "Outdoor Ceiling Fan"
+    },
+    {
+      "id": "3",
+      "src": "./img/outdoorFlushMountLight.jpg",
+      "description": "Outdoor Flush Mount"
+    },
+    {
+      "id": "4",
+      "src": "./img/outdoorSpotLights.jpg",
+      "description": "Outdoor Wall Spot Lights"
+    },
+    {
+      "id": "5",
+      "src": "./img/outdoorStringLights.jpg",
+      "description": "Outdoor String Lights"
+    },
+    {
+      "id": "6",
+      "src": "./img/outdoorWallLight.jpg",
+      "description": "Outdoor Wall Sconce"
+    },
+    {
+      "id": "7",
+      "src": "./img/securityFloodLights.jpg",
+      "description": "Security Flood Lights"
+    },
+    {
+      "id": "8",
+      "src": "./img/solarLEDPathLights.jpg",
+      "description": "LED Solar Path Lights"
+    }
+  ]
+}
