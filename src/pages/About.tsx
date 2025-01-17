@@ -1,10 +1,18 @@
+import { useState } from "react";
 import People from "../img/about.jpg"
+import Loader from "./components/Loader"
 
 const About = () => {
+  const [loaded, setLoaded] = useState(false);
+
   return (
+    <div>
+      {loaded ? null : (
+        <Loader />
+      )}
       <div className="p-8 flex justify-self-center items-center flex-col gap-4">
         <h1 className="text-center py-8 text-charcoal">About</h1>
-        <img src={People} className="rounded-lg imageDiv" />
+        <img src={People} className={`rounded-lg imageDiv ${loaded ? {} : {display: 'none'}}`}  loading="lazy" onLoad={() => setLoaded(true)} />
         <div className="aboutContainer">
           <div className="bg-charcoal text-white p-8 rounded-lg max-w-2xl">
             <h2>Industry-Leading Designers</h2>
@@ -24,6 +32,7 @@ const About = () => {
           </div>
         </div>
       </div>
+    </div>
   )
 }
 
