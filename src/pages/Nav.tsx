@@ -36,7 +36,7 @@ function Nav() {
     <nav className={`navbar ${navActive ? "active" : ""}`}>
       <div className="flex gap-2 items-center">
         <p>Lighthouse Lighting</p>
-        <img src="./img/logo.svg" alt="Logo" className="h-8"  loading="lazy" />
+        <img src="./logo.svg" alt="Logo" className="h-8"  loading="lazy" />
       </div>
       <a className={`navHamburger ${navActive ? "active" : ""}`} onClick={toggleNav}>
         <span className="navHamburgerLine"></span>
